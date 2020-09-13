@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import "./directory.styles.scss";
 import MenuItem from "../menu-item/menu-item.component";
-import ShopPage from "../../pages/shop/shop.component";
 
 const Directory = () => {
   const [items, setItems] = useState([]);
@@ -11,7 +10,7 @@ const Directory = () => {
       title: "hats",
       imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
       id: 1,
-      linkUrl: "shop/hats",
+      linkUrl: "hats",
     },
     {
       title: "jackets",
@@ -56,7 +55,6 @@ const Directory = () => {
           linkUrl={items.linkUrl}
         />
       ))}
-      <ShopPage />
     </div>
   );
 };
