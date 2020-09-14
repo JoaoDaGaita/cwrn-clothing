@@ -49,14 +49,16 @@ const SignIn = () => {
           handleChange={handleChangeEmail}
           value={email}
           label="Email"
+          autoComplete="username"
           required
         />
         <FormInput
-          name="password"
+          name="current-password"
           type="password"
           handleChange={handleChangePassword}
           value={password}
           label="Password"
+          autoComplete="current-password"
           required
         />
         <div className="buttons">

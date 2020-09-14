@@ -91,6 +91,7 @@ const SingUp = () => {
           value={email}
           onChange={handleChangeEmail}
           label="Email"
+          autoComplete="username"
           required
         />
         <FormInput
@@ -99,6 +100,7 @@ const SingUp = () => {
           value={password}
           onChange={handleChangePassword}
           label="Password"
+          autoComplete="new-password"
           required
         />
         <FormInput
@@ -107,6 +109,7 @@ const SingUp = () => {
           value={confirmPassword}
           onChange={handleChangeConfirmPassword}
           label="Confirm Password"
+          autoComplete="new-password"
           required
         />
 
